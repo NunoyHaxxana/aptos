@@ -29,7 +29,7 @@ services:
     ports:
       - "6180:6180"
       - "6181:6181"
-      - "9080:9080"
+      - "8080:8080"
       - "9101:9101"
     expose:
       - 6180
@@ -59,11 +59,11 @@ services:
     command: ["/opt/aptos/bin/aptos-node", "-f", "/opt/aptos/etc/fullnode.yaml"]
     ports:
       - "6182:6182"
-      - "90:9080"
+      - "80:8080"
       - "9103:9101"
     expose:
       - 6182
-      - 90
+      - 80
       - 9103
 
 networks:
