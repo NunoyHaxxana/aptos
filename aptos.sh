@@ -13,12 +13,6 @@ if [ -f "$bash_profile" ]; then
     . $HOME/.bash_profile
 fi
 sleep 1 && curl -s https://api.nodes.guru/logo.sh | bash && sleep 1
-if grep -q avx2 /proc/cpuinfo; then
-	echo ""
-else
-	echo -e "\e[31mInstallation is not possible, your server does not support AVX2, change your server and try again.\e[39m"
-	exit
-fi
 if [ ! $APTOS_NODENAME ]; then
 read -p "Enter node name: " APTOS_NODENAME
 echo 'export APTOS_NODENAME='\"${APTOS_NODENAME}\" >> $HOME/.bash_profile
