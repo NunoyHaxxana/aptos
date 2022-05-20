@@ -10,4 +10,4 @@ sudo ln -s /usr/local/bin/aptos /usr/bin/aptos
 
 
 
-echo -e "Update aptos-cli-0.1.1 \e[32mCompltet \e[39m!"
+echo -e "Update aptos-cli-0.1.1 \e[32mComplete \e[39m!"
