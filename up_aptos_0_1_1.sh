@@ -10,6 +10,6 @@ sudo mv aptos /usr/local/bin/
 sudo chmod +x /usr/local/bin/aptos
 sudo ln -s /usr/local/bin/aptos /usr/bin/aptos
  
-echo -e " "
-echo -e " "
+echo " "
+echo " "
 echo -e "Update aptos-cli-0.1.1 \e[32mComplete \e[39m!"
