@@ -68,7 +68,7 @@ users:
   - $APTOS_NODENAME
 chain_id: 23" >layout.yaml
     
-wget -O framework.zip https://github.com/aptos-labs/aptos-core/releases/download/aptos-cli-v0.1.1/aptos-cli-0.1.1-Ubuntu-x86_64.zip
+wget -O framework.zip https://github.com/aptos-labs/aptos-core/releases/download/aptos-framework-v0.1.0/framework.zip
 unzip -o framework.zip
 aptos genesis generate-genesis --assume-yes --local-repository-dir $HOME/.aptos --output-dir $HOME/.aptos
 sleep 2
