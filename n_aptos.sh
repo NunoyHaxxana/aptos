@@ -36,7 +36,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
  
 #install aptos
-wget -qO aptos-cli.zip https://github.com/aptos-labs/aptos-core/releases/download/aptos-cli-v0.1.1/aptos-cli-0.1.1-Ubuntu-x86_64.zip
+wget -qO aptos-cli-0.1.1-Ubuntu-x86_64.zip https://github.com/aptos-labs/aptos-core/releases/download/aptos-cli-v0.1.1/aptos-cli-0.1.1-Ubuntu-x86_64.zip
 sudo unzip aptos-cli-0.1.1-Ubuntu-x86_64.zip
 sudo mv aptos /usr/local/bin/ 
 sudo chmod +x /usr/local/bin/aptos
