@@ -37,9 +37,10 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
  
 #install aptos
 wget -qO aptos-cli.zip https://github.com/aptos-labs/aptos-core/releases/download/aptos-cli-v0.1.1/aptos-cli-0.1.1-Ubuntu-x86_64.zip
-unzip -o aptos-cli.zip
-chmod +x aptos
-mv aptos /usr/local/bin 
+sudo unzip aptos-cli-0.1.1-Ubuntu-x86_64.zip
+sudo mv aptos /usr/local/bin/ 
+sudo chmod +x /usr/local/bin/aptos
+sudo ln -s /usr/local/bin/aptos /usr/bin/aptos
  
 #create folder,download config    
 IPADDR=$(curl ifconfig.me) 
